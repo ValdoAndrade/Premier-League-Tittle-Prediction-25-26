@@ -1,5 +1,5 @@
 # Premier-League-Tittle-Prediction-25-26 (Python)
-A Data-Driven Approach Using xG and Match Simulation to predict the Premier League winner
+A Data-Driven Approach Using xG and Match Simulation to predict the Premier League winner from Matchday 19 onwards.
 
 ## Project Objective 🎯
 This project evaluate team strenght and performance-based metrics to predict the Premier League tiltle winner among Arsenal, Manchester City and Aston Villa. This project consist in predicting the reamining match fixtures only for these 3 tittle contenders.
