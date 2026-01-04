@@ -35,7 +35,7 @@ teams["strength"] = (
     0.40 * teams["ppg_z"] +
     0.15 * teams["gd_pg_z"]
 )
-
+```
 
     
 - All metrics are standardised using z-scores.
@@ -55,6 +55,7 @@ def predict_result(home_team, away_team):
         return "A"
     else:
         return "D"
+```
 
   
 - Points are assigned using official Premier League rules (3–1–0).
