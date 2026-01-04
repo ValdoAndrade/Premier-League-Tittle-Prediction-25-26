@@ -11,11 +11,9 @@ This project evaluate team strenght and performance-based metrics to predict the
 
 The perfomance based metrics for all premier league teams including average points per game, expected goals (xG), expected goals against (xGA), and goals scored/conceded per game was collected from fbref. Furthermore, the remaining match fixtures was collected from the premier league official website. 
 
-Team Metrics
-<img width="1052" height="592" alt="image" src="https://github.com/user-attachments/assets/3b077586-8306-4664-8ac6-ea2343c20b02" />
+![Team Metrics]<img width="1052" height="592" alt="image" src="https://github.com/user-attachments/assets/3b077586-8306-4664-8ac6-ea2343c20b02" />
 
-Fixtures
-<img width="531" height="678" alt="image" src="https://github.com/user-attachments/assets/3b1b7ac9-00aa-4908-ba70-744f84d2bf4d" />
+![Fixtures]<img width="531" height="678" alt="image" src="https://github.com/user-attachments/assets/3b1b7ac9-00aa-4908-ba70-744f84d2bf4d" />
 
 
 ## Tools Used
@@ -31,7 +29,8 @@ Python (Google colab) for the prediction, cleaning and analysis
   - 40% Points Per Game
   - 15% Goal Difference Per Game
 
- teams["strength"] = (
+```python
+teams["strength"] = (
     0.45 * teams["xg_diff_pg_z"] +
     0.40 * teams["ppg_z"] +
     0.15 * teams["gd_pg_z"]
@@ -43,16 +42,19 @@ Python (Google colab) for the prediction, cleaning and analysis
 - Match outcomes are predicted deterministically using team strength differences.
 - A home advantage factor of 0.25 is applied to the home team’s strength.
   
+
+```python
+THRESHOLD = 0.25
+HOME_ADV = 0.25
+
 def predict_result(home_team, away_team):
     diff = (strength_map[home_team] + HOME_ADV) - strength_map[away_team]
-
     if diff > THRESHOLD:
         return "H"
     elif diff < -THRESHOLD:
         return "A"
     else:
         return "D"
-
 
   
 - Points are assigned using official Premier League rules (3–1–0).
@@ -83,12 +85,15 @@ Both Arsenal and Manchester City win the majority of their remaining fixtures in
 <img width="330" height="172" alt="image" src="https://github.com/user-attachments/assets/46675194-9a1f-4e73-9516-ae03edf2a938" />
 
 
-## Limitations 
+### Limitations 
 
-Team strength assumed to be constant over remaining fixtures.
-Injuries, suspensions, tactical matchups and recent forms are not modelled.
-Deterministic model does not capture randomness.
-The model predicts match outcomes (win, draw, loss) but does not predict scorelines or goal counts. As a result, it does not capture the magnitude of wins or losses,
+-Team strength assumed to be constant over remaining fixtures.
+
+-Injuries, suspensions, tactical matchups and recent forms are not modelled.
+
+-Deterministic model does not capture randomness.
+
+-The model predicts match outcomes (win, draw, loss) but does not predict scorelines or goal counts. As a result, it does not capture the magnitude of wins or losses,
 which can impact goal difference, relevant stats and the perceived dominance of teams.
 
 
