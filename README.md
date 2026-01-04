@@ -21,9 +21,42 @@ Fixtures
 ## Tools Used
 
 Excel for initial data prep
+
 Python (Google colab) for the prediction, cleaning and analysis
 
-## Methododgy 
+## Methodology Overview
+
+- Team strength is calculated using a weighted composite score:
+  - 45% Expected Goals Difference (xG − xGA)
+  - 40% Points Per Game
+  - 15% Goal Difference Per Game
+
+ teams["strength"] = (
+    0.45 * teams["xg_diff_pg_z"] +
+    0.40 * teams["ppg_z"] +
+    0.15 * teams["gd_pg_z"]
+)
+
+
+    
+- All metrics are standardised using z-scores.
+- Match outcomes are predicted deterministically using team strength differences.
+- A home advantage factor of 0.25 is applied to the home team’s strength.
+  
+def predict_result(home_team, away_team):
+    diff = (strength_map[home_team] + HOME_ADV) - strength_map[away_team]
+
+    if diff > THRESHOLD:
+        return "H"
+    elif diff < -THRESHOLD:
+        return "A"
+    else:
+        return "D"
+
+
+  
+- Points are assigned using official Premier League rules (3–1–0).
+- Predicted points from remaining fixtures are added to current league points to project final standings.
 
 
 ## Insights 
@@ -38,7 +71,9 @@ Both Arsenal and Manchester City win the majority of their remaining fixtures in
 
 <img width="582" height="160" alt="image" src="https://github.com/user-attachments/assets/b1424c8b-ebf1-4c5c-a842-910dd97381b0" />
 
+
 <img width="751" height="621" alt="image" src="https://github.com/user-attachments/assets/65d4f365-02f2-438c-b9b1-e7ca8cd4aa4e" />
+
 
 <img width="843" height="607" alt="image" src="https://github.com/user-attachments/assets/4a4b3d5c-db14-4ad3-aa2d-acdf18e8d922" />
 
