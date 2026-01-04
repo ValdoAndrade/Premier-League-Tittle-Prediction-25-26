@@ -11,9 +11,16 @@ This project evaluate team strenght and performance-based metrics to predict the
 
 The perfomance based metrics for all premier league teams including average points per game, expected goals (xG), expected goals against (xGA), and goals scored/conceded per game was collected from fbref. Furthermore, the remaining match fixtures was collected from the premier league official website. 
 
-![Team Metrics]<img width="1052" height="592" alt="image" src="https://github.com/user-attachments/assets/3b077586-8306-4664-8ac6-ea2343c20b02" />
+![Team Metrics]
 
-![Fixtures]<img width="531" height="678" alt="image" src="https://github.com/user-attachments/assets/3b1b7ac9-00aa-4908-ba70-744f84d2bf4d" />
+
+<img width="1052" height="592" alt="image" src="https://github.com/user-attachments/assets/3b077586-8306-4664-8ac6-ea2343c20b02" />
+
+
+
+![Fixtures]
+
+<img width="531" height="678" alt="image" src="https://github.com/user-attachments/assets/3b1b7ac9-00aa-4908-ba70-744f84d2bf4d" />
 
 
 ## Tools Used
@@ -72,13 +79,23 @@ Both Arsenal and Manchester City win the majority of their remaining fixtures in
  Arsenal win the premier legue with 99 final points, following Manchster City with 98 and Aston Villa reached 79 points.
  Manchester City won the match against Arsenal at home.
 
+
+
 <img width="582" height="160" alt="image" src="https://github.com/user-attachments/assets/b1424c8b-ebf1-4c5c-a842-910dd97381b0" />
+
+
 
 
 <img width="751" height="621" alt="image" src="https://github.com/user-attachments/assets/65d4f365-02f2-438c-b9b1-e7ca8cd4aa4e" />
 
 
+
+
+
 <img width="843" height="607" alt="image" src="https://github.com/user-attachments/assets/4a4b3d5c-db14-4ad3-aa2d-acdf18e8d922" />
+
+
+
 
 
 ## Final standings (Top 3)
