@@ -128,8 +128,13 @@ Based on predicted points from remaining fixtures, Arsenal emerged as the most l
 1. Start with the README
    Read THE README to understand the project.
    
-   2.Go to  see the Python script used to do the predictions.
+2- See excel files to see team metrics used and match fixtures predicted.
+   
+3.Go to  see the Python script used to do the predictions.
 
+4- Open Methododgy approach to understand my thought process and understand the technical side.
 
-   3. Review the findings
+5- Review the findings
    Check the Insights sections in this README for a summary of key observations.
+
+6- Open the visualisations document to see further visuals. 
