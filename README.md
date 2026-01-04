@@ -71,15 +71,19 @@ def predict_result(home_team, away_team):
 
 ## Insights 
 
-The results reflects strong performance by Aston Villa against mid-table teams but an inability to consistently match the top two across high-difficulty fixtures.
-Both Arsenal and Manchester City win the majority of their remaining fixtures in the deterministic model, and they demonstrated their dominance at home and away games.
- Manchester City ranked slightly higher in team strength due to superior underlying xG metrics reaching a team strenght of 1.96.
- Arsenal team strenght is 1.76 and Aston Villa is 0.31. Aston Villa registered a low team srtrenght mainly because of their start of the season as they they did not win a single game in the first 5 games and scored only 1 goal.
- Despite being one of the top 3 teams Aston Villa based on te performance metrics from this model they rank 7th in terms of team strenght across the league, which highlights the amazing season they are doing and that the team overachieved.
- Arsenal win the premier legue with 99 final points, following Manchster City with 98 and Aston Villa reached 79 points.
+-The results reflects strong performance by Aston Villa against mid-table teams but an inability to consistently match the top two across high-difficulty fixtures.
+
+-Both Arsenal and Manchester City win the majority of their remaining fixtures in the deterministic model, and they demonstrated their dominance at home and away games.
+
+ -Manchester City ranked slightly higher in team strength due to superior underlying xG metrics reaching a team strenght of 1.96.
+ -Arsenal team strenght is 1.76 and Aston Villa is 0.31. Aston Villa registered a low team strrenght mainly because of their start of the season as they they did not win a single game in the first 5 games and  scored only 1 goal.
+
+ -Despite being one of the top 3 teams Aston Villa based on te performance metrics from this model they rank 7th in terms of team strenght across the league, which highlights the amazing season they are doing and that the team overachieved.
+
+ -Arsenal win the premier legue with 99 final points, following Manchster City with 98 and Aston Villa reached 79 points.
  Manchester City won the match against Arsenal at home.
 
-
+### Visualisations
 
 <img width="582" height="160" alt="image" src="https://github.com/user-attachments/assets/b1424c8b-ebf1-4c5c-a842-910dd97381b0" />
 
